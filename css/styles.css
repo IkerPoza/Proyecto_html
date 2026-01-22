@@ -169,16 +169,10 @@ main .cabecera-principal p{
     flex-direction: column;
     margin: 0 2em;
 }
-
-.articulo1 div div p{
-    color: black;
-    text-align: center;
-    margin-top: 1em;
-}
-
-.articulo1 div div img{
-    height: 15em;
+.articulo1 div div a img{
+    height: 20em;
     width: auto;
+    border-radius: 2em;
 }
 
 /* SLONGAN ENTRE ARTÍCULOS */
