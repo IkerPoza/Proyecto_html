@@ -679,3 +679,81 @@ p{
 footer p{
     color: white;
 }
+
+.quienes-somos{
+    background-color: white;
+    color:black;
+}
+
+.articulo1-quienesomos{
+    height: 450px;
+    background-image: url(../Multimedia/Imagenes/mesas-ordenadores2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2500px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.articulo1-quienesomos div{
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.articulo1-quienesomos p{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 55%;
+}
+
+.articulo1-quienesomos h1, .articulo1-quienesomos h3, .articulo1-quienesomos p{
+    color: white;
+    text-align: center;
+}
+
+.articulo1-quienesomos h1{
+    margin-bottom: 0.1em;
+    font-size: 5em;
+}
+
+.articulo1-quienesomos h1:hover{
+    color: #0070f3;
+    transition: all 0.13s;
+}
+
+.articulo1-quienesomos p{
+    font-weight: 100;
+}
+
+.articulo2-quienesomos h2{
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: #0070f3;
+    color: white;
+}
+
+.articulo2-quienesomos div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.articulo2-quienesomos div section{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    margin: 2em;
+    padding: 1em;
+}
