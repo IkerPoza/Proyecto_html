@@ -104,17 +104,18 @@ main .cabecera-principal div p{
     margin-bottom: 1.5em;
 }
 
-main .cabecera-principal div h1, main .cabecera-principal div p{
+main .cabecera-principal div p{
     color: white;
     text-align: center;
 }
 
-main .cabecera-principal div h1{
+h1{
     margin-bottom: 0.1em;
     font-size: 5em;
+    text-align: center;
 }
 
-main .cabecera-principal h1:hover{
+h1:hover{
     color: #0070f3;
     transition: all 0.13s;
 }
@@ -185,15 +186,15 @@ main .cabecera-principal p{
 
 /* SLONGAN ENTRE ARTÍCULOS */
 .slogan{
-    padding: 1em 0;
     text-align: center;
-    padding: 1em 0;
 }
 
 .slogan h4{
     font-weight: 100;
     font-size: 1.2em;
     color: white;
+    background-color: black;
+    padding: 1em 0;
 }
 
 /* ARITULO SOBRE NOSOTROS */
@@ -214,6 +215,7 @@ main .cabecera-principal p{
     color: black;
     margin-bottom: 0.5em;
     line-height: 1.5em;
+    background-color: transparent;
 }
 
 .articulo2 div p{
@@ -346,22 +348,16 @@ footer {
 .productos{
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
-    background-color: white;
+    flex-flow: row wrap;   
+    background-image: url(../Multimedia/Imagenes/fondo-negro-forms.png);    
 }
 
-.productos h2{
-    width: 100%;
-    text-align: center;
-    margin: 1em auto;
-    color: black;
-}
 
 article.producto {
     width: 700px;
     margin: 30px;
     background: #ffffff;
-    border-radius: 18px;
+    border-radius: 9px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
@@ -437,17 +433,21 @@ article.producto {
 .anadir a {
     display: flex;
     align-items: center;
-    background: #0ea4e9a1;
+    background: #0070f3;
     color: white;
     padding: 14px 22px;
-    border-radius: 999px;
+    border: 1px solid #0070f3;
+    border-radius: 9px;
     font-weight: 700;
     text-decoration: none;
-    box-shadow: 0 8px 18px rgba(14, 165, 233, 0.35);
+    box-shadow: 0 8px 10x rgba(14, 165, 233, 0.35);
 }
 
 .anadir a:hover {
-    background: #0070f3;
+    border: solid 1px #0071f3bd;
+    background-color: #0071f3bd;
+    transition: all 0.13s;
+
 }
 
 /* ICONO */
@@ -475,7 +475,6 @@ form{
     width: 30em;
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
     padding: 3em 2em;
 }
@@ -741,7 +740,7 @@ footer p{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: right;
-    padding: 0 1em;
+    padding: 0 1em .6em 0;
     margin-top: auto;
 }
 
@@ -791,13 +790,13 @@ select:focus{
     box-shadow: #0070f3 0px 0px 5px;
 }
 
-.productos{
+.productos-compra{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
 }
-.productos .seleccion-productos{
+.productos-compra .seleccion-productos{
     margin: 0 auto 2em auto;
 }
 
@@ -810,9 +809,11 @@ main div h3{
     background-color: white;
 }
 
-.nombre-tiendax{
+.nombre-tienda{
     color: #0070f3;
     font-size: 5em;
+    margin-bottom: 0;
+}
 .quienes-somos{
     background-color: white;
     color:black;
@@ -844,30 +845,33 @@ main div h3{
     width: 55%;
 }
 
-.articulo1-quienesomos h1, .articulo1-quienesomos h3, .articulo1-quienesomos p{
+.articulo1-quienesomos h3, .articulo1-quienesomos p{
     color: white;
     text-align: center;
-}
-
-.articulo1-quienesomos h1{
-    margin-bottom: 0.1em;
-    font-size: 5em;
-}
-
-.articulo1-quienesomos h1:hover{
-    color: #0070f3;
-    transition: all 0.13s;
 }
 
 .articulo1-quienesomos p{
     font-weight: 100;
 }
 
-.articulo2-quienesomos h2{
+.articulo1-quienesomos h3{
+    font-size: 1.4em;
+    margin-bottom: .4em;
+}
+
+h2{
     text-align: center;
     padding: 0.5em 0;
     background-color: #0070f3;
     color: white;
+    width: 100%;
+}
+
+.articulo2-quienesomos h3{
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    margin-bottom: .4em;
 }
 
 .articulo2-quienesomos div{
@@ -889,4 +893,20 @@ main div h3{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
     margin: 2em;
     padding: 1em;
+}
+
+.confirmacion-contacto p{ 
+    margin-bottom: .5em;
+}
+
+.articulo3-quienesomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Multimedia/Imagenes/fondo-negro-forms.png);
+}
+
+.articulo3-quienesomos video{
+    padding: 5em 0;
 }
