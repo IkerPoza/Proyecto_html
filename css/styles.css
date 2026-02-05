@@ -194,7 +194,7 @@ main .cabecera-principal p{
     font-size: 1.2em;
     color: white;
     background-color: black;
-    padding: 1em 0;
+    padding: 1em .5em;
 }
 
 /* ARITULO SOBRE NOSOTROS */
@@ -857,6 +857,7 @@ main div h3{
 .articulo1-quienesomos h3{
     font-size: 1.4em;
     margin-bottom: .4em;
+    padding: 0 1em;
 }
 
 h2{
@@ -897,6 +898,7 @@ h2{
 
 .confirmacion-contacto p{ 
     margin-bottom: .5em;
+    text-align: center;
 }
 
 .articulo3-quienesomos{
@@ -909,4 +911,50 @@ h2{
 
 .articulo3-quienesomos video{
     padding: 5em 0;
+    width: 50%;
+}
+
+@media (max-width: 1100px) {
+    .articulo2 {
+        flex-direction: column;
+    }
+
+    .articulo2 div{
+        width: 100%;
+        padding: 3em 5em;
+    }
+    .articulo3-quienesomos video{
+    padding: 5em 0;
+    width: 80%;
+    }
+    .pasarela-de-pago{
+        flex-direction: column;
+    }
+    .formulario{
+        background-image: url(none);
+    }
+}
+
+@media (max-width: 768px) {
+    #contfooter{
+        flex-direction: column;
+    }
+
+    #detalles, #menu{
+        width: 100%;
+    }
+
+    .articulo1-quienesomos p{
+        display: none;
+    }
+
+    .correo-recuperacion img{
+        width: 80%;
+        text-align: center;
+    }
+
+    .correo-recuperacion{
+        padding: 2em 1em;
+    }
+
 }
