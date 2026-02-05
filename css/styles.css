@@ -1,3 +1,4 @@
+/* ----> ESTILOS GENERALES PARA TODA LA WEB <---- */
 *{
     font-family: sans-serif;
     box-sizing: border-box;
@@ -10,6 +11,99 @@ body{
     color: white;
 }
 
+h1{
+    margin-bottom: 0.1em;
+    font-size: 5em;
+    text-align: center;
+}
+
+h1:hover{
+    color: #0070f3;
+    transition: all 0.13s;
+}
+
+h2{
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: #0070f3;
+    color: white;
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.9em;
+    color: black;
+
+}
+
+
+h3:hover{
+    color: #0070f3;
+    transition: all 0.13s;
+}
+
+h4{
+    font-size: 2.5em;
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+/* -- BOTON PARA LAS CONFIRMACIONES -- */
+.boton{
+    margin: 0 9em;
+    border: solid 1px #0070f3;
+    background-color: #0071f334;
+    padding: .6em 1em;
+    border-radius: 9px;
+    color: white;
+    text-align: center;
+}
+
+.boton:hover{
+    background-color: #0070f3;
+    transition: all 0.13s;
+}
+.boton a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* ESTILO PARA TODOS LOS FORMULARIOS */
+form{
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 2em;
+}
+
+/* FONDO PARA LOS ARTICULOS */
+article{
+    background-color: white;
+}
+
+/* ESTILO PARA LOS SELECTS DE LOS FORMULARIOS */
+select{
+    padding: .4em;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    font-size: 0.85em;
+}
+
+select:focus{
+    outline: none;
+    border: solid 1px #0070f3;
+    transition: all 0.13s;
+    box-shadow: #0070f3 0px 0px 5px;
+}
+
+/* NAVBAR */
 header{
     position: sticky;
     top: 0;
@@ -61,6 +155,7 @@ header nav div ul li a{
     text-align: center;
 }
 
+/* NAV PARTE DERECHA */
 header nav .nav-derecha ul li {
     border: solid 1px white;
     background-color: rgba(255, 255, 255, 0.106);
@@ -80,164 +175,6 @@ header nav .nav-derecha ul li a:hover{
     color: white;
 }
 
-/* NAV DERECHA */
-main .cabecera-principal{
-    height: 450px;
-    background-image: url(../Multimedia/Imagenes/escritorio-main.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 2500px auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-main .cabecera-principal div{
-    width: 30em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-main .cabecera-principal div p{
-    margin-bottom: 1.5em;
-}
-
-main .cabecera-principal div p{
-    color: white;
-    text-align: center;
-}
-
-h1{
-    margin-bottom: 0.1em;
-    font-size: 5em;
-    text-align: center;
-}
-
-h1:hover{
-    color: #0070f3;
-    transition: all 0.13s;
-}
-
-main .cabecera-principal p{
-    font-weight: 100;
-}
-
-.boton{
-    margin: 0 9em;
-    border: solid 1px #0070f3;
-    background-color: #0071f334;
-    padding: .6em 1em;
-    border-radius: 9px;
-    color: white;
-    text-align: center;
-}
-
-.boton:hover{
-    background-color: #0070f3;
-    transition: all 0.13s;
-}
-.boton a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-/* MAIN DE INDEX*/
-.articulo1{
-    background-color: white;
-}
-
-.articulo1 h2{
-    text-align: center;
-    padding: 0.5em 0;
-    background-color: #0070f3;
-    color: white;
-}
-
-.articulo1 div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2em 0;
-}
-
-.articulo1 div div{
-    width: 20em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 2em;
-}
-.articulo1 div div a img{
-    height: 20em;
-    width: auto;
-    border-radius: 2em;
-}
-
-.articulo1 div div a img:hover{
-    transform: scale(1.01);
-    transition: all 0.13s;
-    
-}
-
-/* SLONGAN ENTRE ARTÍCULOS */
-.slogan{
-    text-align: center;
-}
-
-.slogan h4{
-    font-weight: 100;
-    font-size: 1.2em;
-    color: white;
-    background-color: black;
-    padding: 1em .5em;
-}
-
-/* ARITULO SOBRE NOSOTROS */
-.articulo2{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.articulo2 div{
-    width: 50%;
-    padding: 3em 10em;
-}
-
-.articulo2 div h2, .articulo2 div p{
-    text-align: left;
-    color: black;
-    margin-bottom: 0.5em;
-    line-height: 1.5em;
-    background-color: transparent;
-}
-
-.articulo2 div p{
-    margin-bottom: 2em;
-}
-
-.articulo2 div h2{
-    color: black;
-}
-
-.articulo2 div ul li, .articulo2 div ul li b{
-    line-height: 2em;
-    color: black;
-}
-
-.compromiso{
-    background-color: #0070f3;
-}
-
-.articulo2 .compromiso h2, .articulo2 .compromiso ul li, .articulo2 .compromiso ul li b{
-    color: white;
-}
 /* FOOTER GENERAL */
 footer {
     background-color: rgb(12, 12, 12);
@@ -248,6 +185,10 @@ footer {
     color: white;
 }
 
+footer p{
+    color: white;
+}
+
 /* CONTENEDOR PRINCIPAL */
 #contfooter {
     display: flex;
@@ -255,7 +196,7 @@ footer {
     width: 100%;
 }
 
-/* MENÚ */
+/* MENÚ DEL FOOTER */
 #menu {
     display: flex;
     width: 30%;
@@ -281,7 +222,7 @@ footer {
     width: 70%;
 }
 
-/* INFORMACIÓN */
+/* NUMERO DE TELEFONO Y DIRECCIÓN */
 #informacion {
     display: flex;
     justify-content: space-around;
@@ -332,7 +273,7 @@ footer {
     text-decoration: none;
 }
 
-/* DERECHOS */
+/* DERECHOS (FINAL DEL FOOTER) */
 #derechos {
     display: flex;
     justify-content: center;
@@ -341,157 +282,16 @@ footer {
     padding: 1em;
 }
 
-/* Productos */
-.productos{
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;   
-    background-image: url(../Multimedia/Imagenes/fondo-negro-forms.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;    
-}
-
-
-article.producto {
-    width: 700px;
-    margin: 30px;
-    background: #ffffff;
-    border-radius: 9px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-/* CABECERA */
-.cabezeraproducto {
-    display: flex;
-    padding: 25px;
-}
-
-/* IMAGEN */
-.cabezeraproducto .imagen img {
-    width: 15em;
-    height: auto;
-}
-
-/* TÍTULO Y PRECIO */
-.cabezeraproducto .titulo h5{
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 1em;
-}
-
-.cabezeraproducto .titulo a {
-    font-size: 0.9rem;
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 9px;
-    padding: .5em;
-    background-color: white;
-    border: 1px black solid;
-}
-
-.cabezeraproducto .titulo a:hover{
-    background-color: rgb(241, 241, 241);
-}
-
-.precio {
-    margin-top: 1em;
-    font-size: 1.6rem;
-    font-weight: 750;
-    color: #0070f3;
-    text-align: left;
-}
-
-/* CONTENIDO INFERIOR */
-.contenido-producto {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 25px 25px;
-}
-
-/* BENEFICIOS */
-.beneficios p {
-    color: #0f172a;
-}
-
-.beneficios ul {
-    list-style: none;
-    padding: 0;
-    margin: 1em;
-}
-
-.beneficios li {
-    font-size: 0.95rem;
-    color: #374151;
-    margin-bottom: 6px;
-}
-
-/* BOTÓN AÑADIR */
-.anadir a {
-    display: flex;
-    align-items: center;
-    background: #0070f3;
-    color: white;
-    padding: 14px 22px;
-    border: 1px solid #0070f3;
-    border-radius: 9px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 8px 10x rgba(14, 165, 233, 0.35);
-}
-
-.anadir a:hover {
-    border: solid 1px #0071f3bd;
-    background-color: #0071f3bd;
-    transition: all 0.13s;
-
-}
-
-/* ICONO */
-.anadir svg {
-    align-items: center;
-    width: 22px;
-    height: 22px;
-    margin-right: .5em;
-} 
-/* FORMULARIOS */
+/* ESTILOS PARA TODOS LOS FORMULARIOS */
 .formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-image: url(../Multimedia/Imagenes/fondo-forms.png);
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: white;
-}
-
-form{
-    width: 30em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3em 2em;
-}
-
-h3{
-    text-align: center;
-    margin-bottom: 1em;
-    font-size: 2.9em;
-    color: black;
-
-}
-
-h3:hover{
-    color: #0070f3;
-    transition: all 0.13s;
-}
-
-article{
     background-color: white;
 }
 
@@ -501,7 +301,9 @@ article{
     line-height: 2;
     color: black;
 }
-.formulario input, .formulario textarea, .formulario select{
+.formulario input, 
+.formulario textarea, 
+.formulario select{
     margin-bottom: 2em;
     width: 100%;
     color: black;
@@ -548,25 +350,31 @@ article{
 }
 
 .formulario form .eliminar:hover{
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     transition: all 0.13s;
 }
+
 .formulario textarea{
     height: 10em;
     resize: none;
 }
-.formulario input, .formulario select, .formulario textarea{
+
+.formulario input, 
+.formulario select, 
+.formulario textarea{
     padding: .9em;
     border-radius: 5px;
     border: solid 1px #ccc;
     font-size: 0.85em;
 }
-.formulario input:focus, .formulario select:focus, .formulario textarea:focus{
+
+.formulario input:focus, 
+.formulario select:focus, 
+.formulario textarea:focus{
     outline: none;
     border: solid 1px #0070f3;
     transition: all 0.13s;
-        box-shadow: #0070f3 0px 0px 5px;
-
+    box-shadow: #0070f3 0px 0px 5px;
 }
 
 .formulario form .union{
@@ -575,10 +383,12 @@ article{
     justify-content: center;
     margin-bottom: 1em;
 }
+
 .formulario form .union input{
     width: 10%;
     margin-bottom: 0;
 }
+
 .formulario form .union label{
     width: 90%;
     margin-bottom: 0;
@@ -590,6 +400,7 @@ article{
     color: black;
     font-size: 1.1em;
 }
+
 .formulario form p small{
     color: black;
     text-align: left;
@@ -605,33 +416,7 @@ article{
     width: 48%;
 }
 
-/* CONFIRMACIÖN FORMULARIO DE CONTACTO */
-.confirmacion-contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 3em 0;
-    background-image: url(../Multimedia/Imagenes/fondo-forms.png);
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-} 
-
-.confirmacion-contacto div{
-    max-width: 40em;
-    text-align: center;
-}
-.confirmacion-contacto div h3, .confirmacion-contacto div p{
-    color: black;
-}
-
-.confirmacion-contacto div h3{
-    font-size: 2.5em;
-    margin-bottom: .4em;
-}
-
+/* ESTILO DE BOTON PARA LAS PAGINAS DE CONFIRMACIÓN */
 .boton-formulario{
     display: inline-block;
     text-align: center;
@@ -655,6 +440,273 @@ article{
     color: white;
 }
 
+
+/* ----> PARTES EXCLUIVAS DE CADA PAGINA <---- */
+
+/* ESTILOS PARA LA PAGINA INDEX */
+/* MAIN DE INDEX*/
+main .cabecera-principal{
+    height: 450px;
+    background-image: url(../Multimedia/Imagenes/escritorio-main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2500px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .cabecera-principal p{
+    font-weight: 100;
+}
+
+main .cabecera-principal div{
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .cabecera-principal div p{
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/* PRIMER ARTICULO DE INDEX */
+.articulo1{
+    background-color: white;
+}
+
+.articulo1 h2{
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: #0070f3;
+    color: white;
+}
+
+.articulo1 div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.articulo1 div div{
+    width: 20em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+}
+.articulo1 div div a img{
+    height: 20em;
+    width: auto;
+    border-radius: 2em;
+}
+
+.articulo1 div div a img:hover{
+    transform: scale(1.01);
+    transition: all 0.13s;
+    
+}
+
+/* FRASE ENTRE ARTÍCULOS */
+.slogan h4{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    padding: 1em .5em;
+}
+
+/* ARTICULO2 DEL INDEX (SOBRE NOSOTROS) */
+.articulo2{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.articulo2 div{
+    width: 50%;
+    padding: 3em 10em;
+}
+
+.articulo2 div h2, 
+.articulo2 div p{
+    text-align: left;
+    color: black;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    background-color: transparent;
+}
+
+.articulo2 div p{
+    margin-bottom: 2em;
+}
+
+.articulo2 div ul li, 
+.articulo2 div ul li b{
+    line-height: 2em;
+}
+
+.compromiso{
+    background-color: #0070f3;
+}
+
+.articulo2 .compromiso h2{
+    color: white;
+}
+
+/* ESTILOS PARA LA PAGINA DE PRODUCTOS */
+/* PRODCUTOS DE LA PAGINA PRODUCTOS */
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;   
+    background-image: url(../Multimedia/Imagenes/fondo-negro-forms.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+}
+
+article.producto {
+    width: 700px;
+    margin: 30px;
+    background: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.cabezeraproducto {
+    display: flex;
+    padding: 25px;
+}
+
+.cabezeraproducto .imagen img {
+    width: 15em;
+    height: auto;
+}
+
+.cabezeraproducto .titulo h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.cabezeraproducto .titulo a {
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: .5em;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 9px;
+}
+
+.cabezeraproducto .titulo a:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+/* PRECIO DE LOS PRODUCTOS*/
+.precio {
+    margin-top: 1em;
+    font-size: 1.6rem;
+    font-weight: 750;
+    color: #0070f3;
+    text-align: left;
+}
+
+.contenido-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 25px 25px;
+}
+
+/* BENEFICIOS */
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+}
+
+.beneficios li {
+    font-size: 0.95rem;
+    color:black;
+    margin-bottom: 6px;
+}
+
+/* BOTÓN AÑADIR */
+.anadir a {
+    display: flex;
+    align-items: center;
+    background: #0070f3;
+    color: white;
+    border-radius: 9px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 22px;
+    border: 1px solid #0070f3;
+    box-shadow: 0 8px 10x rgba(14, 165, 233, 0.35);
+}
+
+.anadir a:hover {
+    border: solid 1px #0071f3bd;
+    background-color: #0071f3bd;
+    transition: all 0.13s;
+}
+
+/* ICONO DE BOTON AÑADIR */
+.anadir svg {
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin-right: .5em;
+} 
+
+/* ESTILOS PARA LA PAGINA DE CONFIRMACIÓN DE CONTACTO */
+/* CONFIRMACIÖN FORMULARIO DE CONTACTO */
+.confirmacion-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 3em 0;
+    background-image: url(../Multimedia/Imagenes/fondo-forms.png);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+} 
+
+.confirmacion-contacto div{
+    max-width: 40em;
+    text-align: center;
+}
+
+.confirmacion-contacto div h3{
+    font-size: 2.5em;
+    margin-bottom: .4em;
+    color: black;
+
+}
+
+.confirmacion-contacto p{ 
+    margin-bottom: .5em;
+    text-align: center;
+    color: black;
+}
+
+/* ESTILOS PARA LA PAGINA DE CONFIRMACION DE RECUPERACION DE CONTRASEÑA */
+/* CONFIRMACION DE RECUPERACION DE CONTRASEÑA */
 .correo-recuperacion{
     display: flex;
     flex-direction: row;
@@ -673,19 +725,26 @@ article{
     padding-bottom: .5em;
 }
 
-h4{
-    font-size: 2.5em;
-    color: black;
+/* ESTILOS PARA LA PAGINA DE PASARELA DE PAGO */
+/* PAGINA DE PASARELA DE PAGO */
+.pasarela-de-pago{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    background-image: url(../Multimedia/Imagenes/fondo-forms.png);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 2em 0;
 }
 
-p{
-    color: black;
+.pasarela-de-pago .productos{
+    margin-right: 3em;
 }
 
-footer p{
-    color: white;
-}
-
+/* SELECCIÓN DE PRODUCTOS EN PASARELA DE PAGO */
 .seleccion-productos{
     background-color: white;
     padding: 1em 0;
@@ -752,41 +811,10 @@ footer p{
     margin-right: .6em;
 }
 
-.pasarela-de-pago{
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    justify-content: center;
-    background-image: url(../Multimedia/Imagenes/fondo-forms.png);
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: white;
-    padding: 2em 0;
-}
-
-.pasarela-de-pago .productos{
-    margin-right: 3em;
-}
-
+/* FORMULARIO DE LA PASARELA DE PAGO */
 .pasarela-de-pago .formulario{
     background-color: transparent;
     background-image: url(none);
-}
-
-
-select{
-    padding: .4em;
-    border-radius: 5px;
-    border: solid 1px #ccc;
-    font-size: 0.85em;
-}
-
-select:focus{
-    outline: none;
-    border: solid 1px #0070f3;
-    transition: all 0.13s;
-    box-shadow: #0070f3 0px 0px 5px;
 }
 
 .productos-compra{
@@ -813,11 +841,15 @@ main div h3{
     font-size: 5em;
     margin-bottom: 0;
 }
+
+/* ESTILOS PARA LA PAGINA DE QUIENES SOMOS */
+/* PAGINA DE QUIENES SOMOS */
 .quienes-somos{
     background-color: white;
     color:black;
 }
 
+/* ARTICULO 1 DE QUIENES SOMOS */
 .articulo1-quienesomos{
     height: 450px;
     background-image: url(../Multimedia/Imagenes/mesas-ordenadores2.jpeg);
@@ -844,7 +876,8 @@ main div h3{
     width: 55%;
 }
 
-.articulo1-quienesomos h3, .articulo1-quienesomos p{
+.articulo1-quienesomos h3, 
+.articulo1-quienesomos p{
     color: white;
     text-align: center;
 }
@@ -859,14 +892,7 @@ main div h3{
     padding: 0 1em;
 }
 
-h2{
-    text-align: center;
-    padding: 0.5em 0;
-    background-color: #0070f3;
-    color: white;
-    width: 100%;
-}
-
+/* ARTICULO 2 DE QUIENES SOMOS */
 .articulo2-quienesomos h3{
     text-align: center;
     font-size: 2em;
@@ -895,11 +921,7 @@ h2{
     padding: 1em;
 }
 
-.confirmacion-contacto p{ 
-    margin-bottom: .5em;
-    text-align: center;
-}
-
+/* ARTICULO 3 DE QUIENES SOMOS (VIDEO)*/
 .articulo3-quienesomos{
     display: flex;
     flex-direction: column;
@@ -912,6 +934,8 @@ h2{
     padding: 5em 0;
     width: 50%;
 }
+
+/* ----> MEDIA QUERY <---- */
 
 @media (max-width: 1100px) {
     .articulo2 {
@@ -955,5 +979,4 @@ h2{
     .correo-recuperacion{
         padding: 2em 1em;
     }
-
 }
