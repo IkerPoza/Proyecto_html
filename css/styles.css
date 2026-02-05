@@ -342,7 +342,7 @@ footer p{
 
 .formulario form .eliminar{
     color: black;
-    border: px solid black;
+    border: 1px solid black;
     padding: .7em 1.5em;
     width: 40%;
     border-radius: 9px;
@@ -655,7 +655,7 @@ article.producto {
     text-decoration: none;
     padding: 14px 22px;
     border: 1px solid #0070f3;
-    box-shadow: 0 8px 10x rgba(14, 165, 233, 0.35);
+    box-shadow: 0 8px 10px rgba(14, 165, 233, 0.35);
 }
 
 .anadir a:hover {
@@ -730,7 +730,6 @@ article.producto {
 .pasarela-de-pago{
     display: flex;
     flex-direction: row;
-    align-items: top;
     justify-content: center;
     background-image: url(../Multimedia/Imagenes/fondo-forms.png);
     background-position: bottom;
