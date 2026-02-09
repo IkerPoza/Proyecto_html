@@ -978,4 +978,21 @@ main div h3{
     .correo-recuperacion{
         padding: 2em 1em;
     }
+
+    .cabezeraproducto{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cabezeraproducto div{
+        width: 100%;
+        text-align: center;
+    }
+    .contenido-producto{
+        flex-direction: column;
+        align-items: center
+    }
+    .precio{
+        text-align: center;
+    }
 }
